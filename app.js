@@ -20,6 +20,9 @@ const port = 3000;
 
 // ACTION: include your won API Key (week 6)
 // const apikey = "f07f4108cf725ebd667c729045200517";
+//
+//
+//
 
 //------------------------------------------------------
 // standard functions
@@ -117,7 +120,7 @@ app.post("/chat", function(req, res) {
       CalculateTotal(req, res);
       
       var dialogFlow_output = {
-        fulfillmentText: 'Total price: $' + total_price
+        fulfillmentText: 'Total price: $' + total_price +'. You can make your payment using PayNow. Thanks.'
       };
 
       res.send(dialogFlow_output);
