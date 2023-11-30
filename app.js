@@ -117,7 +117,7 @@ app.post("/chat", function(req, res) {
       CalculateTotal(req, res);
       
       var dialogFlow_output = {
-        fulfillmentText: 'Total price: ${total_price}'
+        fulfillmentText: 'Total price: $' + total_price
       };
 
       res.send(dialogFlow_output);
